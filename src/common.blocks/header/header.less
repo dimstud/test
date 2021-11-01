@@ -1,3 +1,6 @@
+@import (less) '../../less/variables.less';
+@import (less) '../../less/mixins.less';
+
 .header {
 	min-height: 50px;
 	padding-top: 2px;
@@ -47,7 +50,7 @@
 
 
 	&__search {
-		
+
 		&-icon {
 			padding-top: 3px;
 		}
@@ -73,6 +76,90 @@
 	}
 
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1200px) {
+	.header {
+		min-height: 92px;
+		padding-top: 5px;
+		padding-bottom: 17px;
 	
+	
+		&__wrapper {
+			min-width: 140px;
+	
+			&:last-child {
+				min-width: 1002px;
+				padding-top: 18px;
+			}
+		}
+	
+		&__burger {
+			display: none;
+		}
+	
+		&__logo {
+			width: 140px;
+			height: 70px;
+		}
+	
+	
+	
+		&__search {
+			position: relative;
+			width: 753px;
+
+			&-icon {
+				position: absolute;
+				top: 10px;
+				right: 16px;
+				display: block;
+
+				svg {
+					path {
+						fill: @color-text-grey;
+					}
+				}
+			}
+			&-input {
+				display: block;
+				width: 753px;
+				height: 50px;
+				padding: 0px 20px 0px 20px;
+				border: 1px solid @border-light;
+				border-radius: 4px;
+
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: @color-text-grey;
+			}
+		}
+	
+		&__contact {
+			width: 191px;
+
+			&-icon {
+				display: none;
+			}
+	
+			&-tel {
+			display: inline;
+
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+			color: @color-text;
+			}
+	
+			&-hours {
+				display: inline;
+
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: @color-text;
+			}
+		}
+	
+	}
 }
