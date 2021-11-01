@@ -1,0 +1,18 @@
+.font(@weight, @size, @line-height, @color){
+	font-weight: @weight;
+	font-size: @size;
+	line-height: @line-height;
+	color: @color;
+}
+
+.side-block(@top, @right, @width, @overflow: hidden){
+	position: absolute;
+	top: @top;
+	right: @right;
+	width: @width;
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .6s;
+	overflow: @overflow;
+}
