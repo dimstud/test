@@ -31,6 +31,7 @@
 
 	&__body {
 		padding: 24px 0;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 
 		&-list {
 			display: block;
@@ -78,13 +79,48 @@
 				line-height: 20px;
 				color: @color-text-light;
 
-				&:last-child {
-					margin-bottom: 8px;
-				}
-
 				svg {
 					margin-right: 12px;
 				}
+			}
+		}
+	}
+
+	&__footer {
+		padding-top: 24px;
+
+		&-tel {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+			color: @color-text-green;
+		}
+
+		&-hours {
+			margin-bottom: 16px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: @color-text-grey-light;
+		}
+
+		&-mail {
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			color: @color-text-light;
+		}
+
+		&-social {
+			margin-top: 16px;
+			&-item {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				background-color: @bgc-green;
 			}
 		}
 	}
