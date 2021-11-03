@@ -35,6 +35,7 @@
 
 		&-list {
 			display: block;
+			list-style-type: none;
 		}
 
 		&-item {
@@ -59,6 +60,7 @@
 		}
 
 		&-drop {
+			list-style-type: none;
 			display: none;
 
 			&-active {
@@ -145,7 +147,7 @@
 
 @media (min-width:1200px) {
 	.menu {
-		position: relative;
+		position: static;
 		visibility: visible;
 		opacity: 1;
 		z-index: 1;
@@ -158,10 +160,8 @@
 		&__body {
 			padding: 0;
 			border-bottom: none;
-	
+
 			&-list {
-				display: block;
-				list-style-type: none;
 				display: flex;
 			}
 	
@@ -192,32 +192,33 @@
 			}
 	
 			&-drop {
-				list-style-type: none;
 				position: absolute;
-				left: 0;
-				bottom: 0;
+				left: 83px;
+				top: 141px;
+				height: 106px;
+				width: 1200px;
+				z-index: 10;
+
 				&-active {
-					display: block;
-					padding-bottom: 8px;
+					display: flex;
+					padding-bottom: 0;
 				}
 	
 				&-item {
-					height: 44px;
+					display: block;
+					height: 100%;
+
+					width: 100%;
 				}
 	
 				&-link {
-					display: flex;
-					align-items: center;
-					width: 100%;
-					height: 100%;
-					font-weight: 400;
-					font-size: 14px;
-					line-height: 20px;
-					color: @color-text-light;
-
 					background-color: @bgc-dark;
+					flex-direction: column;
+					justify-content: center;
+
 					svg {
-						margin-right: 12px;
+						margin-right: 0;
+						margin-bottom: 6px;
 					}
 				}
 			}
