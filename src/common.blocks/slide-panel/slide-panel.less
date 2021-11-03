@@ -1,0 +1,29 @@
+@import (reference) '../../less/variables.less';
+
+.slide-panel {
+
+	&__block {
+		list-style-type: none;
+		display: flex;
+	}
+
+	&__item {
+		&:not(:first-child) {
+			&::before {
+				content: '> ';
+				// padding: 0 5px;
+			}
+		}
+	}
+
+	&__link {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		color: @color-text;
+
+		&-active{
+		color: @color-text-grey-light;
+		}
+	}
+}

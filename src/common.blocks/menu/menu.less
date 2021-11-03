@@ -192,6 +192,7 @@
 			}
 	
 			&-drop {
+				display: none;
 				position: absolute;
 				left: 83px;
 				top: 141px;
@@ -216,10 +217,16 @@
 					flex-direction: column;
 					justify-content: center;
 
+					&:hover {
+						background-color: @bgc-green;
+					}
+
 					svg {
 						margin-right: 0;
 						margin-bottom: 6px;
 					}
+
+
 				}
 			}
 		}
