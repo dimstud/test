@@ -11,9 +11,18 @@
 		&:not(:first-child) {
 			&::before {
 				content: '> ';
-				// padding: 0 5px;
+				padding: 0 5px;
+				font-size: 12px;
+				line-height: 18px;
 			}
 		}
+
+		&:last-child{
+			span, &::before {
+				color: @color-text-grey-light;
+			}
+		}
+
 	}
 
 	&__link {
@@ -22,8 +31,5 @@
 		line-height: 18px;
 		color: @color-text;
 
-		&-active{
-		color: @color-text-grey-light;
-		}
 	}
 }
