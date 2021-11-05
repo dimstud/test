@@ -1,0 +1,23 @@
+@import (reference) '../../less/variables.less';
+
+.title {
+	padding-top: 18px;
+
+	&__name {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 29px;
+		color: @color-text;
+	}
+}
+
+@media (min-width:1200px) {
+	.title {
+		padding-top: 16px;
+	
+		&__name {
+			font-size: 48px;
+			line-height: 59px;
+		}
+	}
+}
