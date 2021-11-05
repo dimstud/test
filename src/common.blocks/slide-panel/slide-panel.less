@@ -8,28 +8,23 @@
 	}
 
 	&__item {
+		color: @color-text;
 		&:not(:first-child) {
+			color: @color-text-grey-light;
 			&::before {
 				content: '> ';
 				padding: 0 5px;
 				font-size: 12px;
 				line-height: 18px;
+				color: inherit;
 			}
 		}
-
-		&:last-child{
-			span, &::before {
-				color: @color-text-grey-light;
-			}
-		}
-
 	}
 
 	&__link {
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 18px;
-		color: @color-text;
-
+		color: inherit;
 	}
 }
