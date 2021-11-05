@@ -8,9 +8,9 @@
 	}
 
 	&__item {
-		color: @color-text;
+		color: @color-text-grey-light;
 		&:not(:first-child) {
-			color: @color-text-grey-light;
+			color: @color-text;
 			&::before {
 				content: '> ';
 				padding: 0 5px;
@@ -26,5 +26,24 @@
 		font-size: 12px;
 		line-height: 18px;
 		color: inherit;
+	}
+}
+
+@media (min-width:1200px) {
+	.slide-panel {
+
+		&__item {
+			&:not(:first-child) {
+				&::before {
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	
+		&__link {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 }
