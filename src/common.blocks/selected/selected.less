@@ -33,11 +33,19 @@
 		margin-left: 8px;
 	}
 
+	&__reset {
+		display: inline-flex;
+	}
+
 	&__btn-reset {
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 20px;
 		color: @color-text-grey;
+		margin-top: 12px;
+		border: none;
+		background-color: inherit;
+		border-bottom: 1px dashed #A0A0A0;
 	}
 }
 
@@ -45,6 +53,12 @@
 	.selected {
 		&__item {
 			margin-bottom: 0;
+		}
+
+		&__btn-reset {
+			
+			margin-top: 0;
+			margin-left: 12px;
 		}
 	}
 }
