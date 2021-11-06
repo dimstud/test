@@ -21,6 +21,52 @@
 			}
 		}
 	}
+
+	&__block {
+		position: fixed;
+		top: 55px;
+		right: -100%;
+		height: 100vh;
+		width: 272px;
+		z-index: 10;
+		visibility: hidden;
+		opacity: 0;
+		transition: all .6s;
+		overflow-y: scroll;
+		background-color: @bgc-light;
+
+		&-active {
+			top: 55px;
+			right: 0;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&__head {
+		padding: 11px 16px 16px 16px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid #C4C4C4;
+
+		h4 {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+			color: @bgc-dark;
+		}
+	}
+
+	&__overlay {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
 }
 
 @media (min-width: 1200px) {
