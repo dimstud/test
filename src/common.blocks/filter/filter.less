@@ -225,8 +225,56 @@
 	}
 
 	&__materials {
-		&-body {
-			
+		&-list {
+			list-style-type: none;
+		}
+
+		&-item {
+			padding-left: 32px;
+			margin-bottom: 14px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-input {
+			display: none;
+		}
+
+		&-input:checked + &-label::after {
+			content: '';
+			width: 11.3px;
+			height: 8.5px;
+			position: absolute;
+			left: -24px;
+			top: 3px;
+			content: '';
+			display: block;
+			background-image: url('./check.png');
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+
+		&-label {
+			position: relative;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			color: @color-text;
+			cursor: pointer;
+
+			&::before {
+				position: absolute;
+				left: -31px;
+				top: -5px;
+				content: '';
+				display: block;
+				width: 22px;
+				height: 22px;
+				border: 2px solid #A0A0A0;
+				border-radius: 4px;
+			}
 		}
 	}
 
