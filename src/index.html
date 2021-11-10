@@ -296,7 +296,7 @@
 
                   <h4 class="filter__subtitle">Категория</h4>
   
-                  <div class="filter__icon">
+                  <div class="filter__icon filter__icon-active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
                     </svg>                                          
@@ -323,7 +323,7 @@
 
                   <h4 class="filter__subtitle">Цена</h4>
   
-                  <div class="filter__icon">
+                  <div class="filter__icon filter__icon-active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
                     </svg>                                          
@@ -357,7 +357,7 @@
 
                   <h4 class="filter__subtitle">Товары со скидкой</h4>
   
-                  <div class="filter__icon">
+                  <div class="filter__icon filter__icon-active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
                     </svg>                                          
@@ -382,6 +382,59 @@
 
                   <h4 class="filter__subtitle">Материалы</h4>
   
+                  <div class="filter__icon filter__icon-active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
+                    </svg>
+                  </div>
+
+                </div>
+                <div class="filter__subblock-body filter__materials-body">
+                  <ul class="filter__materials-list">
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="abs-plast" id="abs-plast" class="filter__materials-input">
+                      <label for="abs-plast" class="filter__materials-label">ABS пластик</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="amocor-tm" id="amocor-tm" class="filter__materials-input">
+                      <label for="amocor-tm" class="filter__materials-label">Amicor TM</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="eco-foam" id="eco-foam" class="filter__materials-input" checked>
+                      <label for="eco-foam" class="filter__materials-label">Eco Foam</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="pla-plast" id="pla-plast" class="filter__materials-input">
+                      <label for="pla-plast" class="filter__materials-label">PLA пластик</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="acrylic" id="acrylic" class="filter__materials-input">
+                      <label for="acrylic" class="filter__materials-label">Акрил</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="aluminium-alloy" id="aluminium-alloy" class="filter__materials-input">
+                      <label for="aluminium-alloy" class="filter__materials-label">Алюминиевый сплав</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="aluminum" id="aluminum" class="filter__materials-input">
+                      <label for="aluminum" class="filter__materials-label">Алюминий</label>
+                    </li>
+                    <li class="filter__materials-item">
+                      <input type="checkbox" name="bamboo" id="bamboo" class="filter__materials-input">
+                      <label for="bamboo" class="filter__materials-label">Бамбук</label>
+                    </li>
+                  </ul>
+                  <button class="filter__materials-btn">Показать все</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__subblock filter__height">
+              <div class="filter__container">
+                <div class="filter__subblock-head">
+
+                  <h4 class="filter__subtitle">Высота, см</h4>
+  
                   <div class="filter__icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
@@ -389,17 +442,27 @@
                   </div>
 
                 </div>
-                <div class="filter__subblock-body filter__materials-body">
-                  <ul class="filter__materials-list">
-                    <li class="filter__materials-item">
-                      <input type="checkbox" name="abs" id="abs" class="filter__materials-input">
-                      <label for="abs" class="filter__materials-label">ABS пластик</label>
-                    </li>
-                    <li class="filter__materials-item">
-                      <input type="checkbox" name="amocor" id="amocor" class="filter__materials-input">
-                      <label for="amocor" class="filter__materials-label">Amicor TM</label>
-                    </li>
-                  </ul>
+                <div class="filter__subblock-body filter__height-body">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="filter__subblock filter__length">
+              <div class="filter__container">
+                <div class="filter__subblock-head">
+
+                  <h4 class="filter__subtitle">Длина, см</h4>
+  
+                  <div class="filter__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.70999 12.29L11.3 9.69997C11.69 9.30997 12.32 9.30997 12.71 9.69997L15.3 12.29C15.93 12.92 15.48 14 14.59 14H9.40999C8.51999 14 8.07999 12.92 8.70999 12.29Z" fill="#A0A0A0"/>
+                    </svg>                                          
+                  </div>
+
+                </div>
+                <div class="filter__subblock-body filter__length-body">
+                  
                 </div>
               </div>
             </div>
