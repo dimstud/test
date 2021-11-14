@@ -1,0 +1,129 @@
+@import (reference) '../../less/variables.less';
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 2px;
+	padding-bottom: 8px;
+
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+
+	&__hamburger {
+		width: 24px;
+		height: 24px;
+		margin-right: 20px;
+	}
+
+	&__logo {
+		width: 80px;
+		height: 40px;
+		margin-right: 104px;
+	}
+
+	&__search {
+		margin-right: 12px;
+
+		&-icon {
+			width: 24px;
+			height: 24px;
+		}
+
+		&-input {
+			display: none;
+		}
+	}
+
+	&__info {
+		display: none;
+	}
+
+	&__text {
+		width: 24px;
+		height: 24px;
+	}
+
+	&__tel {
+		display: none;
+	}
+}
+
+@media (min-width:1200px) {
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 17px;
+
+		&__block {
+			display: flex;
+			align-items: flex-end;
+		}
+	
+		&__hamburger {
+			display: none;
+		}
+	
+		&__logo {
+			width: 140px;
+			height: 70px;
+			margin-right: 58px;
+		}
+	
+		&__search {
+			position: relative;
+			margin-right: 58px;
+			margin-bottom: 2px;
+	
+			&-icon {
+				position: absolute;
+				top: 13px;
+				right: 19px;
+				width: 24px;
+				height: 24px;
+
+				svg {
+					path {
+						fill: #A0A0A0;
+					}
+				}
+			}
+	
+			&-input {
+				display: block;
+				width: 753px;
+				height: 50px;
+				border: 1px solid #C4C4C4;
+				border-radius: 4px;
+			}
+		}
+	
+		&__text {
+			width: auto;
+			height: auto;
+			margin-bottom: 3px;
+
+			&-icon {
+				display: none;
+			}
+		}
+	
+		&__tel {
+			display: block;
+			text-align: right;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		&__info {
+			display: block;
+			text-align: right;
+		}
+	}
+}
