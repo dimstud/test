@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head class="page">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Каталог</title>
 </head>
-<body>
+<body class="page-body">
 <header class="header">
   <div class="container">
-    <div class="header__block">
+    <div class="header__wrap">
       <div class="header__hamburger">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#1A1A1A"/>
         </svg>
       </div>
       <div class="header__logo">
-        <a class="header__link">
+        <a>
           <svg viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.1406 69.6505L21.1059 56.4773L14.6839 67.3382H12.4275L6.00548 56.7226V69.6505H1.28442V47.6135H5.45006L13.6425 61.3122L21.696 47.6135H25.8617L25.8964 69.6505H21.1406Z" fill="#359C31"/>
             <path d="M48.2173 65.5507V69.6498H31.3118V47.6128H47.8007V51.7119H36.3452V56.4767H46.4816V60.4356H36.3452V65.5157H48.2173V65.5507Z" fill="#359C31"/>
@@ -42,14 +42,14 @@
           </svg>
         </div>
       </div>
-      <div class="header__text">
-        <div class="header__text-icon">
+      <div class="header__descr">
+        <div class="header__descr-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.23 15.26L16.69 14.97C16.08 14.9 15.48 15.11 15.05 15.54L13.21 17.38C10.38 15.94 8.06 13.63 6.62 10.79L8.47 8.94001C8.9 8.51001 9.11 7.91001 9.04 7.30001L8.75 4.78001C8.63 3.77001 7.78 3.01001 6.76 3.01001H5.03C3.9 3.01001 2.95999 3.95001 3.02999 5.08001C3.55999 13.62 10.39 20.44 18.92 20.97C20.05 21.04 20.99 20.1 20.99 18.97V17.24C21 16.23 20.24 15.38 19.23 15.26Z" fill="#1A1A1A"/>
           </svg>        
         </div>
-        <a class="header__tel" href="tel:+79876543210">+7 987 654-32-10</a>
-        <p class="header__info">Ежедневно с 09:00 – 20:00</p>
+        <a class="header__descr-tel" href="tel:+79876543210">+7 987 654-32-10</a>
+        <p class="header__descr-info">Ежедневно с 09:00 – 20:00</p>
       </div>
     </div>
   </div>
@@ -58,8 +58,8 @@
 <nav class="menu">
   <div class="container">
     <div class="menu__head">
-      <div class="menu__logo">
-        <a class="menu__logo-link">
+      <div class="menu__head-logo">
+        <a>
           <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.0803 39.8002L12.0605 32.2727L8.39078 38.4789H7.10142L3.43169 32.4128V39.8002H0.733948V27.2076H3.11431L7.79569 35.0354L12.3977 27.2076H14.7781L14.7979 39.8002H12.0803Z" fill="#359C31"/>
             <path d="M27.5527 37.4575V39.7998H17.8924V27.2073H27.3147V29.5496H20.7687V32.2723H26.5609V34.5346H20.7687V37.4375H27.5527V37.4575Z" fill="#359C31"/>
@@ -77,7 +77,7 @@
           </svg>
         </a>
       </div>
-      <div class="menu__close">
+      <div class="menu__head-close">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.22566 4.81096C5.83514 4.42044 5.20197 4.42044 4.81145 4.81096C4.42092 5.20148 4.42092 5.83465 4.81145 6.22517L10.5862 11.9999L4.81151 17.7746C4.42098 18.1651 4.42098 18.7983 4.81151 19.1888C5.20203 19.5793 5.8352 19.5793 6.22572 19.1888L12.0004 13.4141L17.7751 19.1888C18.1656 19.5793 18.7988 19.5793 19.1893 19.1888C19.5798 18.7983 19.5798 18.1651 19.1893 17.7746L13.4146 11.9999L19.1893 6.22517C19.5799 5.83465 19.5799 5.20148 19.1893 4.81096C18.7988 4.42044 18.1657 4.42044 17.7751 4.81096L12.0004 10.5857L6.22566 4.81096Z" fill="white"/>
         </svg>        
@@ -175,14 +175,14 @@
       </li>
     </ul>
     <div class="menu__footer">
-      <div class="menu__text">
-        <a class="menu__tel" href="tel:+79876543210">+7 987 654-32-10</a><br>
-        <p class="menu__info">Ежедневно с 09:00 – 20:00</p>
-        <a class="menu__mail" href="mailto:example@example.ru">example@example.ru</a>
+      <div class="menu__footer-descr">
+        <a class="menu__footer-descr-tel" href="tel:+79876543210">+7 987 654-32-10</a><br>
+        <p class="menu__footer-descr-info">Ежедневно с 09:00 – 20:00</p>
+        <a class="menu__footer-descr-mail" href="mailto:example@example.ru">example@example.ru</a>
       </div>
-      <ul class="menu__socials">
-        <li class="menu__social">
-          <a class="menu__social-link" href="#">
+      <ul class="menu__footer-social">
+        <li class="menu__footer-social-item">
+          <a href="#">
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_1_3084" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18C0 8.05888 8.05888 0 18 0C27.9411 0 36 8.05888 36 18C36 27.9411 27.9411 36 18 36C8.05888 36 0 27.9411 0 18Z" fill="white"/>
@@ -508,7 +508,7 @@
       Наша компания регулярно участвует в мебельных выставках.</p>
   </section> -->
 </main>
-<!-- <footer class="footer">
+<footer class="footer">
   <div class="footer__left">
     <div class="footer__logo">
       <a class="footer__logo-link">
@@ -556,13 +556,6 @@
       <li class="footer__catalog-item">
         <a href="#" class="footer__catalog-link">Шкафы</a>
       </li>
-      <li class="catalog__item">
-        <div class="catalog__img">
-          <img src="./common.blocks/catalog/rectangle-3.png" alt="Диван-кровать Бит-2 Латте">
-        </div>
-        <p class="catalog__descr">Диван-кровать Бит-2 Латте</p>
-        <span class="catalog__price">7000 ₽</span><span class="catalog__price-old"></span>
-      </li>
     </ul>
   </div>
   <div class="footer__stor">
@@ -608,6 +601,6 @@
     </ul>
     <a class="footer__copyright">Сделано в OnlineBees</a>
   </div>
-</footer> -->
+</footer>
 </body>
 </html>

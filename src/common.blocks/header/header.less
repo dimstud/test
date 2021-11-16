@@ -8,8 +8,10 @@
 	padding-top: 2px;
 	padding-bottom: 8px;
 	box-shadow: 0px 4px 5px rgba(50, 50, 71, 0.16);
-	&__block {
-		display: flex;
+
+	&__wrap {
+		display: grid;
+		grid-template-columns: min-content 1fr min-content min-content;
 		align-items: center;
 	}
 
@@ -23,7 +25,6 @@
 	&__logo {
 		width: 80px;
 		height: 40px;
-		margin-right: 104px;
 		cursor: pointer;
 	}
 
@@ -40,17 +41,17 @@
 		}
 	}
 
-	&__info {
-		display: none;
-	}
-
-	&__text {
+	&__descr {
 		width: 24px;
 		height: 24px;
-	}
 
-	&__tel {
-		display: none;
+		&-tel {
+			display: none;
+		}
+
+		&-info {
+			display: none;
+		}
 	}
 }
 
@@ -64,9 +65,8 @@
 		padding-bottom: 17px;
 		box-shadow: none;
 
-		&__block {
-			display: flex;
-			align-items: flex-end;
+		&__wrap {
+			grid-template-columns: min-content 1fr max-content;
 		}
 	
 		&__hamburger {
@@ -119,28 +119,28 @@
 			}
 		}
 	
-		&__text {
+		&__descr {
 			width: auto;
 			height: auto;
 			margin-bottom: 3px;
 
 			&-icon {
 				display: none;
-			}
-		}
-	
-		&__tel {
-			display: block;
-			text-align: right;
-			font-weight: 600;
-			font-size: 18px;
-			line-height: 26px;
-		}
 
-		&__info {
-			display: block;
-			text-align: right;
-			cursor: default;
+				&-tel {
+					display: block;
+					text-align: right;
+					font-weight: 600;
+					font-size: 18px;
+					line-height: 26px;
+				}
+		
+				&-info {
+					display: block;
+					text-align: right;
+					cursor: default;
+				}
+			}
 		}
 	}
 }
