@@ -1,0 +1,25 @@
+.page {
+	height: 100vh;
+	
+
+	&-body {
+		min-height: 100%;
+		display: grid;
+		grid-template-rows: 
+			min-content
+			min-content
+			1fr
+			min-content;
+	}
+}
+
+.container {
+	width: 288px;
+	margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+	}
+}
