@@ -87,6 +87,7 @@
 				border: 1px solid @border-light;
 				border-radius: 4px;
 				padding: 15px 20px;
+				padding-right: 43px;
 				color: @color-text-grey;
 				outline: 0;
 				outline-offset: 0;
@@ -103,7 +104,9 @@
 
 				&:disabled {
 					background-color: @bgc-grey-dark;
-					color: @bgc-light;
+					&::placeholder {
+						color: @bgc-light;
+					}
 				}
 			}
 	
