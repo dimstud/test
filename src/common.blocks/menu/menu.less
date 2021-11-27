@@ -41,6 +41,8 @@
 
 	&__list {
 		margin-top: 51px;
+		padding-bottom: 12px;
+		border-bottom: 2px solid @border-menu;
 	}
 
 	&__item {
@@ -66,19 +68,26 @@
 	&__drop {
 		&-item {
 			width: 100%;
-			
-			&:first-child a {
+			padding: 8px 0;
+
+			&:first-child {
 				padding-top: 4px;
+			}
+
+			&:last-child {
+				padding-bottom: 12px;
 			}
 		}
 
 		&-link {
 			display: flex;
 			align-items: center;
-			height: 44px;
-			padding: 8px 0;
-			background-color: red;
+			min-height: 28px;
 			color: @color-text-light;
+
+			&:active {
+				text-decoration: underline;
+			}
 
 			svg {
 				margin-right: 12px;
@@ -89,6 +98,42 @@
 
 	&__footer {
 		min-height: 162px;
+		padding-top: 24px;
+
+		&-info {
+			color: @color-text-grey-light;
+		}
+
+		&-tel {
+			display: block;
+			margin-bottom: 4px;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+			color: @color-text-green;
+		}
+
+		&-mail {
+			display: block;
+			margin-top: 16px;
+			color: @color-text-light;
+			text-decoration: underline;
+		}
+
+		&-socials {
+			display: flex;
+			padding-top: 16px;
+
+			&-link {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				background-color: @color-text-green;
+			}
+		}
 	}
 }
 
