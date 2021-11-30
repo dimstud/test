@@ -6,17 +6,26 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 10;
 	width: 100vw;
 	height: 100hw;
 	padding-top: 5px;
 	padding-bottom: 40px;
 	overflow-y: scroll;
 	background-color: @bgc-dark;
+	display: none;
+
+	&-active {
+		display: block;
+	}
 
 	@media (min-width: @desktop) {
 		position: unset;
 		background-color: inherit;
+		display: block;
+		width: auto;
+		overflow-y: auto;
+		z-index: 0;
 	}
 
 	&__container {
@@ -61,10 +70,28 @@
 		margin-top: 51px;
 		padding-bottom: 12px;
 		border-bottom: 2px solid @border-menu;
+
+		@media (min-width: @desktop) {
+			display: flex;
+			border: none;
+			padding: 0;
+			height: 45px;
+		}
 	}
 
 	&__item {
 		width: 100%;
+		@media (min-width: @desktop) {
+			flex-grow: 1;
+			background-color: @color-text-green;
+
+			&:first-child {
+				flex-grow: 0;
+				min-width: 264px;
+				background-color: @bgc-dark;
+				padding: 0;
+			}
+		}
 	}
 
 	&__link {
@@ -72,7 +99,6 @@
 		width: 100%;
 		height: 44px;
 		padding: 12px 0;
-		border: none;
 		font-weight: 600;
 		color: @color-text-light;
 		text-align: left;
@@ -81,9 +107,27 @@
 		svg {
 			display: none;
 		}
+
+		@media (min-width: @desktop) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			font-weight: 400;
+
+			svg {
+				display: inline;
+				margin-right: 6px;
+			}
+		}
 	}
 
 	&__drop {
+
+		@media (min-width: @desktop) {
+			display: none;
+		}
+
 		&-item {
 			width: 100%;
 			padding: 8px 0;
@@ -117,6 +161,10 @@
 	&__footer {
 		min-height: 162px;
 		padding-top: 24px;
+
+		@media (min-width: @desktop) {
+			display: none;
+		}
 
 		&-info {
 			color: @color-text-grey-light;

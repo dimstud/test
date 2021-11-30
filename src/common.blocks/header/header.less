@@ -1,9 +1,15 @@
 @import '../../less/variables.less';
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
 	height: 50px;
 	padding-top: 2px;
 	padding-bottom: 8px;
+	background-color: @bgc-light;
 	box-shadow: 0px 4px 5px rgba(50, 50, 71, 0.16);
 
 	@media (min-width: @desktop) {
