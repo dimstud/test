@@ -15,17 +15,20 @@
 	background-color: @bgc-dark;
 	display: none;
 
-	&-active {
+	&--active {
 		display: block;
 	}
 
 	@media (min-width: @desktop) {
 		position: unset;
-		background-color: inherit;
 		display: block;
-		width: auto;
-		overflow-y: auto;
-		z-index: 0;
+		background-color: #fff;
+		width: 100%;
+		height: 45px;
+		overflow: visible;
+		z-index: 1;
+		padding: 0;
+		margin-top: 17px;
 	}
 
 	&__container {
@@ -34,8 +37,11 @@
 		padding: 0 16px;
 
 		@media (min-width: @desktop) {
+			position: relative;
 			width: 1200px;
 			padding: 0;
+			background-color: @color-text-green;
+
 		}
 	}
 
@@ -52,6 +58,7 @@
 		background-color: @bgc-dark;
 
 		@media (min-width: @desktop) {
+			position: unset;
 			display: none;
 		}
 
@@ -75,17 +82,19 @@
 			display: flex;
 			border: none;
 			padding: 0;
+			margin: 0;
 			height: 45px;
 		}
 	}
 
 	&__item {
 		width: 100%;
+		
 		@media (min-width: @desktop) {
 			flex-grow: 1;
-			background-color: @color-text-green;
 
 			&:first-child {
+				position: relative;
 				flex-grow: 0;
 				min-width: 264px;
 				background-color: @bgc-dark;
@@ -112,6 +121,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			height: 100%;
 			padding: 0;
 			font-weight: 400;
 
@@ -119,13 +129,34 @@
 				display: inline;
 				margin-right: 6px;
 			}
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
 	&__drop {
+		display: none;
+	
+		&--active {
+			display: block;
+		}
 
 		@media (min-width: @desktop) {
 			display: none;
+			position: absolute;
+			top: 44px;
+			left: 0;
+			width: 1200px;
+			height: 106px;
+			background-color: @bgc-dark;
+			z-index: 1000;
+			opacity: 1;
+
+			&--active {
+				display: flex;
+			}
 		}
 
 		&-item {
@@ -138,6 +169,20 @@
 
 			&:last-child {
 				padding-bottom: 12px;
+			}
+
+			@media (min-width: @desktop) {
+				flex-grow: 1;
+				width: auto;
+				padding: 0;
+
+				&:first-child {
+					padding-top: 0;
+				}
+	
+				&:last-child {
+					padding-bottom: 0;
+				}
 			}
 		}
 
@@ -155,6 +200,21 @@
 				margin-right: 12px;
 			}
 
+			@media (min-width: @desktop) {
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+
+				&:hover {
+					background-color: @bgc-green;
+				}
+
+				svg {
+					margin-right: 0;
+					margin-bottom: 6px;
+				}
+			}
 		}
 	}
 
