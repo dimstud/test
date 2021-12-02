@@ -1,13 +1,44 @@
+@import (reference) '../../less/variables.less';
+
 .breadcrumbs {
 	margin-top: 74px;
+	margin-bottom: 18px;
+
+	@media (min-width: @desktop) {
+		margin-top: 44px;
+		margin-bottom: 16px;
+	}
 
 	&__container {
 		width: 320px;
 		margin: 0 auto;
 		padding: 0 16px;
+
+		@media (min-width: @desktop) {
+			width: 1200px;
+			padding: 0;
+		}
 	}
 
 	&__list {
 		display: flex;
+	}
+
+	&__item {
+		position: relative;
+		padding-right: 16px;
+		color: @color-text;
+		font-size: 12px;
+		line-height: 18px;
+
+		&:not(:last-child)::after {
+			position: absolute;
+			right: 5px;
+			content: '>';
+		}
+	}
+
+	&__link {
+		color: @color-text-grey;
 	}
 }
