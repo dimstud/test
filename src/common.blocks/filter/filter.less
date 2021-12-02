@@ -1,4 +1,13 @@
+@import (reference) '../../less/variables.less';
+
 .filter {
+
+	@media (min-width: @desktop) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
 
 	&__title {
 		display: flex;
@@ -8,5 +17,10 @@
 		position: fixed;
 		top: 0;
 		display: none;
+
+		@media (min-width: @desktop) {
+			position: unset;
+			display: block;
+		}
 	}
 }

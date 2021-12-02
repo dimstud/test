@@ -1,6 +1,13 @@
 @import (reference) '../../less/variables.less';
 
 .main {
+	
+	@media (min-width: @desktop) {
+		display: grid;
+	grid-template-columns: 239px 1fr;
+	grid-template-rows: min-content min-content 1fr max-content;
+	}
+
 	&__container {
 		width: @mobile;
 		margin: 0 auto;
@@ -19,6 +26,8 @@
 		color: @color-text-title;
 
 		@media (min-width: @desktop) {
+			grid-column-start: 1;
+			grid-column-end: -1;
 			font-size: 48px;
 			line-height: 59px;
 			color: @color-text;
