@@ -283,13 +283,20 @@
                 </svg> 
               </div>
             </div>
-            <div class="filter__price-slider"></div>
-            <label class="filter__price-label">
-              от <input class="filter__price-input" type="text" name="price-from" id="price-from">
-            </label>
-            <label class="filter__price-label">
-              до <input class="filter__price-input" type="text" name="price-to" id="price-to">
-            </label>
+            <div class="filter__price-range">
+              <div class="scale">
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__price-label">
+                от <input class="filter__price-input" type="number" name="price-from" id="price-from">
+              </label>
+              <label class="filter__price-label">
+                до <input class="filter__price-input" type="number" name="price-to" id="price-to">
+              </label>
+            </div>
           </section>
           <section class="filter__discount">
             <div class="filter__subheader">
