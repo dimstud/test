@@ -225,7 +225,7 @@
         </button>
         <h2>Фильтр</h2>
       </div>
-      <div class="filter__overlay filter__overlay--active">
+      <div class="filter__overlay">
         <div class="filter__block">
           <div class="filter__block-head">
             <svg class="filter__block-back" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +239,7 @@
             </div>
           </div>
 
-          <!-- <section class="filter__category">
+          <section class="filter__category">
             <div class="filter__subheader">
               <h4 class="filter__subtitle">Категория</h4>
               <div class="filter__category-trigger filter__trigger">
@@ -274,9 +274,9 @@
                 <a href="#" class="filter__category-link">Комплекты мягкой мебели</a>
               </li>
             </ul>
-          </section> -->
+          </section>
 
-          <!-- <section class="filter__price">
+          <section class="filter__price">
             <div class="filter__subheader">
               <h4 class="filter__subtitle">Цена</h4>
               <div class="filter__price-trigger filter__trigger">
@@ -299,9 +299,9 @@
                 до <input class="filter__price-input" type="number" name="price-to" id="price-to">
               </label>
             </div>
-          </section> -->
+          </section>
 
-          <!-- <section class="filter__discount">
+          <section class="filter__discount">
             <div class="filter__subheader">
               <h4 class="filter__subtitle">Товары со скидкой</h4>
               <div class="filter__discount-trigger filter__trigger">
@@ -314,7 +314,7 @@
               <input class="filter__discount-checkbox" id="discount" type="checkbox" checked>
               <span class="filter__discount-span" tabindex="0"></span>
             </label>
-          </section> -->
+          </section>
 
           <section class="filter__materials">
             <div class="filter__subheader">
@@ -335,7 +335,7 @@
                 <label for="amocor-tm" class="filter__materials-label">Amicor TM</label>
               </li>
               <li class="filter__materials-item">
-                <input class="materials__input" type="checkbox" name="eco-foam" id="eco-foam">
+                <input class="filter__materials-input" type="checkbox" name="eco-foam" id="eco-foam">
                 <label for="eco-foam" class="filter__materials-label">Eco FoamEco Foam</label>
               </li>
               <li class="filter__materials-item">
@@ -371,13 +371,20 @@
                 </svg> 
               </div>
             </div>
-            <div class="filter__height-slider"></div>
-            <label class="filter__height-label">
-              от <input class="filter__height-input" type="text" name="height-from" id="height-from">
-            </label>
-            <label class="filter__height-label">
-              до <input class="filter__height-input" type="text" name="height-to" id="height-to">
-            </label>
+            <div class="filter__price-range">
+              <div class="scale">
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__price-label">
+                от <input class="filter__price-input" type="number" name="price-from" id="price-from">
+              </label>
+              <label class="filter__price-label">
+                до <input class="filter__price-input" type="number" name="price-to" id="price-to">
+              </label>
+            </div>
           </section>
 
           <section class="filter__lenght">
@@ -389,13 +396,20 @@
                 </svg> 
               </div>
             </div>
-            <div class="filter__lenght-slider"></div>
-            <label class="filter__lenght-label">
-              от <input class="filter__lenght-input" type="text" name="lenght-from" id="lenght-from">
-            </label>
-            <label class="filter__lenght-label">
-              до <input class="filter__lenght-input" type="text" name="lenght-to" id="lenght-to">
-            </label>
+            <div class="filter__price-range">
+              <div class="scale">
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__price-label">
+                от <input class="filter__price-input" type="number" name="price-from" id="price-from">
+              </label>
+              <label class="filter__price-label">
+                до <input class="filter__price-input" type="number" name="price-to" id="price-to">
+              </label>
+            </div>
           </section>
           
         </div>
