@@ -4,24 +4,43 @@
 	padding: 48px 0;
 	background-color: @bgc-dark;
 
+	@media (min-width: @desktop) {
+		padding: 46px 0 32px;
+	}
+
 	&__wrap {
 		display: grid;
-		grid-template-columns: 1fr;
 
 		@media (min-width: @desktop) {
+			grid-template-columns: repeat(4, auto);
+			grid-template-rows: 180px, auto;
+			grid-row-gap: 32px;
 		}
 	}
 
 	&__info {
 		order: 4;
+		margin-top: 24px;
+
+		@media (min-width: @desktop) {
+			margin: 0;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
 	}
 
 	&__logo {
 		display: none;
+
+		@media (min-width: @desktop) {
+			display: block;
+		}
 	}
 
 	&__descr {
-		margin-top: 24px;
+		
 	}
 
 	&__address {
@@ -40,23 +59,57 @@
 		order: 5;
 		margin-top: 24px;
 		color: @color-text-grey;
+
+		@media (min-width: @desktop) {
+			margin: 0;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
 	}
 
 	&__subtitle {
 		display: none;
+
+		@media (min-width: @desktop) {
+			display: block;
+			margin-bottom: 16px;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 26px;
+			color: @color-text-light;
+		}
 	}
 
 	&__catalog {
 		display: none;
 
-		&-list {}
+		@media (min-width: @desktop) {
+			display: block;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
 
-		&-item {}
+		&-wrap {
+			display: flex;
 
-		&-link {}
+			& > ul:last-child {
+				margin-left: 32px;
+			}
+		}
 	}
 
 	&__stor {
+
+		@media (min-width: @desktop) {
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 2;
+		}
 
 		&-list {}
 
@@ -75,18 +128,59 @@
 	
 	&__text {
 		margin-top: 24px;
+
+		@media (min-width: @desktop) {
+			margin-top: 0;
+			grid-column-start: 4;
+			grid-column-end: 5;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			text-align: right;
+		}
 	}
 
-	&__text {}
+	&__contacts {
+		
+		&-list {
+			@media (min-width: @desktop) {
+				margin-top: 42px;
+				flex-direction: row-reverse;
+			}
+		}
+	}
 
 	&__copyright {
-		order: 6;
+		order: 5;
 		margin-top: 8px;
+
+		@media (min-width: @desktop) {
+			margin: 0;
+			grid-column-start: 4;
+			grid-column-end: 5;
+			grid-row-start: 2;
+			grid-row-end: 3;
+			text-align: right;
+		}
 		&-link {
 			color: @color-text-grey;
+
 			span {
 				text-decoration: underline;
 			}
 		}
+	}
+
+	&__list {}
+
+	&__item {
+		margin-bottom: 16px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__link {
+		color: @color-text-grey-light;
 	}
 }
