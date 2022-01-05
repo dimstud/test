@@ -1,22 +1,24 @@
 @import (reference) '../../less/variables.less';
 
 .main {
-	
+		
 	@media (min-width: @desktop) {
 		display: grid;
-	grid-template-columns: 239px 1fr;
-	grid-template-rows: min-content min-content 1fr max-content;
-	column-gap: 37px;
+		grid-template-columns: 239px 1fr;
+		grid-template-rows: min-content min-content 1fr max-content;
+		column-gap: 37px;
 	}
 
 	&__container {
 		width: @mobile;
 		margin: 0 auto;
 		padding: 0 16px;
+		padding-bottom: 80px;
 
 		@media (min-width: @desktop) {
 			width: @desktop;
 			padding: 0;
+			padding-bottom: 80px;
 		}
 	}
 
