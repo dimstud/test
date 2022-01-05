@@ -1,5 +1,92 @@
+@import (reference) '../../less/variables.less';
+
 .footer {
+	padding: 48px 0;
+	background-color: @bgc-dark;
+
+	&__wrap {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media (min-width: @desktop) {
+		}
+	}
+
+	&__info {
+		order: 4;
+	}
+
 	&__logo {
 		display: none;
+	}
+
+	&__descr {
+		margin-top: 24px;
+	}
+
+	&__address {
+		font-style: normal;
+		color: @color-text-light;
+	}
+
+	&__policy {
+		display: inline-block;
+		margin-top: 8px;
+		color: @color-text-grey;
+		text-decoration: underline;
+	}
+
+	&__name {
+		order: 5;
+		margin-top: 24px;
+		color: @color-text-grey;
+	}
+
+	&__subtitle {
+		display: none;
+	}
+
+	&__catalog {
+		display: none;
+
+		&-list {}
+
+		&-item {}
+
+		&-link {}
+	}
+
+	&__stor {
+
+		&-list {}
+
+		&-item {
+			margin-bottom: 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-link {
+			color: @color-text-grey-light;
+		}
+	}
+	
+	&__text {
+		margin-top: 24px;
+	}
+
+	&__text {}
+
+	&__copyright {
+		order: 6;
+		margin-top: 8px;
+		&-link {
+			color: @color-text-grey;
+			span {
+				text-decoration: underline;
+			}
+		}
 	}
 }
