@@ -15,16 +15,32 @@
 		grid-template-columns: repeat(2, 136px);
 		row-gap: 34px;
 		column-gap: 16px;
+
+		@media (min-width: @desktop) {
+			grid-template-columns: repeat(3, 264px);
+			row-gap: 32px;
+			column-gap: 48px;
+		}
 	}
 
 	&__item {
 		width: 136px;
-		height: 210px;
+		min-height: 210px;
+
+		@media (min-width: @desktop) {
+			width: 264px;
+			min-height: 342px;
+		}
 	}
 
 	&__img {
 		width: 136px;
 		height: 124px;
+
+		@media (min-width: @desktop) {
+			width: 264px;
+			height: 240px;
+		}
 
 		img {
 			width: 100%;
@@ -35,18 +51,38 @@
 		margin-top: 8px;
 		font-size: 12px;
 		line-height: 18px;
+
+		@media (min-width: @desktop) {
+			margin-top: 16px;
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 
 	&__price {
+		margin-top: 4px;
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 20px;
 
+		@media (min-width: @desktop) {
+			font-size: 18px;
+			line-height: 26px;
+		}
+
 		&-old {
+			margin-left: 12px;
 			font-weight: normal;
 			font-size: 10px;
 			line-height: 12px;
+			vertical-align: middle;
 			text-decoration: line-through;
+			color: @color-text-grey;
+
+			@media (min-width: @desktop) {
+				font-size: 14px;
+				line-height: 20px;
+			}
 		}
 	}
 }
